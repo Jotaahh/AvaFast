@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.gustavosapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.gustavosapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.gustavosapplication.app.modules.frame.ui.FrameActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.comment.ui.CommentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.comofunciona.ui.ComoFuncionaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.avaliation.ui.AvaliationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.verifynumber.ui.VerifyNumberActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.comentarios.ui.ComentariosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.productdetail.ui.ProductDetailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.category.ui.CategoryActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.products.ui.ProductsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.aprenda.ui.AprendaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.aboutme.ui.AboutMeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.writereview.ui.WriteReviewActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.avaliaes.ui.AvaliaEsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.home.ui.HomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.otpscreen.ui.OtpScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.comentariosss.ui.ComentariosssActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.forgotpassword.ui.ForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.login.ui.LoginActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.favs.ui.FavsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.gustavosapplication.app.modules.avalie.ui.AvalieActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.gustavosapplication.app.modules.cadastrar.ui.CadastrarActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gustavosapplication.app.modules.account.ui.AccountActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

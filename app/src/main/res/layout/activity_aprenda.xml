@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="aprendaVM" type="com.gustavosapplication.app.modules.aprenda.data.viewmodel.AprendaVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAprenda"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyleblack_901">
+        <TextView android:ellipsize="end" android:id="@+id/txtAvaFast"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_53pxv"
+            android:layout_width="wrap_content"
+            android:letterSpacing="0.04" android:singleLine="true"
+            android:text="@{aprendaVM.aprendaModel.txtAvaFast}"
+            style="@style/txtPoppinsbold30" tools:text="@string/lbl_avafast"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtAprendaamexer"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_66pxv"
+            android:layout_width="match_parent"
+            android:letterSpacing="0.02" android:singleLine="true"
+            android:text="@{aprendaVM.aprendaModel.txtAprendaamexer}"
+            style="@style/txtPoppinsmedium15_1" tools:text="@string/msg_aprenda_a_mexer"/>
+        <ImageView android:gravity="start"
+            android:id="@+id/imageRestOne"
+            android:layout_height="@dimen/_412pxv"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_rest1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_rest1"/>
+        <ImageView android:id="@+id/imagePointers"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_8pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_63pxv"
+            android:layout_width="@dimen/_48pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_pointers"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_pointers"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnProximo"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_56pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:text="@string/lbl_proximo"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_proximo"/>
+    </LinearLayout>
+</layout>

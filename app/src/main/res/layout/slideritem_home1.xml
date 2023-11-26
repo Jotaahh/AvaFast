@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderellaolssonrdthreeModel" type="com.gustavosapplication.app.modules.home.data.model.ImageSliderSliderellaolssonrdthreeModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackellaolssonrdthree"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageEllaolssonrDThree"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_283pxh"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageUrl="@{imageSliderSliderellaolssonrdthreeModel.imageEllaolssonrDThree}"
+            placeHolder="@{@drawable/image_not_found}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellaolssonrd3"/>
+        <TextView android:gravity="top|start"
+            android:id="@+id/txtGarantacupons"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_59pxv"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_59pxv"
+            android:layout_width="match_parent"
+            android:text="@{imageSliderSliderellaolssonrdthreeModel.txtGarantacupons}"
+            style="@style/txtPoppinssemibold18_2" tools:text="@string/msg_garanta_cupons"/>
+    </FrameLayout>
+</layout>

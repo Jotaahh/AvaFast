@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="avaliationVM" type="com.gustavosapplication.app.modules.avaliation.data.viewmodel.AvaliationVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameAvaliation"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStyleblack_900">
+        <LinearLayout android:id="@+id/linearColumnavafast"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_14pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtAvaFast"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_width="wrap_content"
+                android:letterSpacing="0.04" android:singleLine="true"
+                android:text="@{avaliationVM.avaliationModel.txtAvaFast}"
+                style="@style/txtPoppinsbold30" tools:text="@string/lbl_avafast"/>
+            <ImageView android:gravity="start"
+                android:id="@+id/imageImageThree"
+                android:layout_height="@dimen/_384pxv"
+                android:layout_marginTop="@dimen/_60pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_image3}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_image3"/>
+            <TextView android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtComoresgataro"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_marginTop="@dimen/_78pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.04" android:singleLine="true"
+                android:text="@{avaliationVM.avaliationModel.txtComoresgataro}"
+                style="@style/txtPoppinsbold25" tools:text="@string/msg_como_resgatar_o"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescription"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_marginTop="@dimen/_9pxv"
+                android:layout_width="match_parent"
+                android:letterSpacing="0.02"
+                android:text="@{avaliationVM.avaliationModel.txtDescription}"
+                style="@style/txtPoppinsmedium15_1" tools:text="@string/msg_lorem_ipsum_dol"/>
+            <LinearLayout android:id="@+id/linearRowvoltar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_marginTop="@dimen/_49pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnVoltar"
+                    android:layout_height="@dimen/_45pxv"
+                    android:layout_width="@dimen/_82pxh"
+                    android:paddingBottom="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_17pxh"
+                    android:paddingStart="@dimen/_17pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_voltar"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_voltar"/>
+
+                <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
+                    android:id="@+id/indicatorPointers"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_35pxv"
+                    android:layout_marginStart="@dimen/_78pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.18"
+                    android:layout_width="0dp"
+                    app:drawable_normal="@drawable/indicator_unselected_bg_gray_300_radius_8"
+                    app:drawable_selected="@drawable/indicator_selected_bg_gray_900_radius_8"
+                    app:indicator_size="@dimen/_8pxh" app:indicator_spacing="@dimen/_6pxh"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnProximo"
+                    android:layout_height="@dimen/_45pxv"
+                    android:layout_marginStart="@dimen/_78pxh"
+                    android:layout_width="@dimen/_82pxh"
+                    android:paddingBottom="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_9pxh"
+                    android:paddingStart="@dimen/_9pxh"
+                    android:paddingTop="@dimen/_11pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_proximo"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded" tools:text="@string/lbl_proximo"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
