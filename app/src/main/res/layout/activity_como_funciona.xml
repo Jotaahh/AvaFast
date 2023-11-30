@@ -33,46 +33,60 @@
                 android:scaleType="fitXY"
                 imageRes="@{@drawable/img_image2}"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_image2"/>
-            <TextView android:ellipsize="end"
-                android:gravity="center_horizontal"
+
+            <TextView
                 android:id="@+id/txtComoFuncionamo"
+                style="@style/txtPoppinsbold25"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_16pxh"
                 android:layout_marginStart="@dimen/_16pxh"
                 android:layout_marginTop="@dimen/_66pxv"
-                android:layout_width="match_parent"
-                android:letterSpacing="0.04" android:singleLine="true"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.04"
+                android:singleLine="true"
                 android:text="@{comoFuncionaVM.comoFuncionaModel.txtComoFuncionamo}"
-                style="@style/txtPoppinsbold25" tools:text="@string/msg_como_funcionamo"/>
-            <TextView android:gravity="center_horizontal"
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/msg_como_funcionamo" />
+
+            <TextView
                 android:id="@+id/txtOintuirodono"
+                style="@style/txtPoppinsmedium15_1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_13pxh"
                 android:layout_marginStart="@dimen/_16pxh"
                 android:layout_marginTop="@dimen/_20pxv"
-                android:layout_width="match_parent"
+                android:layout_marginEnd="@dimen/_13pxh"
+                android:gravity="center_horizontal"
                 android:letterSpacing="0.02"
                 android:text="@{comoFuncionaVM.comoFuncionaModel.txtOintuirodono}"
-                style="@style/txtPoppinsmedium15_1" tools:text="@string/msg_o_intuiro_do_no"/>
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/msg_o_intuiro_do_no" />
             <LinearLayout android:id="@+id/linearRowvoltar"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_10pxh"
                 android:layout_marginStart="@dimen/_16pxh"
                 android:layout_marginTop="@dimen/_25pxv"
-                android:layout_width="match_parent" android:orientation="horizontal">
+                android:layout_width="match_parent" android:orientation="horizontal"
+                tools:ignore="VisualLintBounds">
+
                 <androidx.appcompat.widget.AppCompatButton
-                    android:ellipsize="end" android:gravity="center"
                     android:id="@+id/btnVoltar"
-                    android:layout_height="@dimen/_45pxv"
+                    style="@style/btnSolidRounded"
                     android:layout_width="@dimen/_82pxh"
-                    android:paddingBottom="@dimen/_11pxv"
-                    android:paddingEnd="@dimen/_17pxh"
+                    android:layout_height="@dimen/_45pxv"
+                    android:ellipsize="end"
+                    android:gravity="center"
                     android:paddingStart="@dimen/_17pxh"
                     android:paddingTop="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_17pxh"
+                    android:paddingBottom="@dimen/_11pxv"
                     android:singleLine="true"
                     android:text="@string/lbl_voltar"
                     android:textAllCaps="false"
-                    style="@style/btnSolidRounded" tools:text="@string/lbl_voltar"/>
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck,VisualLintBounds"
+                    tools:text="@string/lbl_voltar" />
 
                 <com.asksira.loopingviewpager.indicator.CustomShapePagerIndicator
                     android:id="@+id/indicatorPointers"
@@ -84,21 +98,26 @@
                     android:layout_width="0dp"
                     app:drawable_normal="@drawable/indicator_unselected_bg_gray_300_radius_8"
                     app:drawable_selected="@drawable/indicator_selected_bg_gray_900_radius_8"
-                    app:indicator_size="@dimen/_8pxh" app:indicator_spacing="@dimen/_6pxh"/>
+                    app:indicator_size="@dimen/_8pxh" app:indicator_spacing="@dimen/_6pxh"
+                    tools:ignore="VisualLintBounds" />
+
                 <androidx.appcompat.widget.AppCompatButton
-                    android:ellipsize="end" android:gravity="center"
                     android:id="@+id/btnProximo"
+                    style="@style/btnSolidRounded"
+                    android:layout_width="@dimen/_82pxh"
                     android:layout_height="@dimen/_45pxv"
                     android:layout_marginStart="@dimen/_78pxh"
-                    android:layout_width="@dimen/_82pxh"
-                    android:paddingBottom="@dimen/_11pxv"
-                    android:paddingEnd="@dimen/_9pxh"
+                    android:ellipsize="end"
+                    android:gravity="center"
                     android:paddingStart="@dimen/_9pxh"
                     android:paddingTop="@dimen/_11pxv"
+                    android:paddingEnd="@dimen/_9pxh"
+                    android:paddingBottom="@dimen/_11pxv"
                     android:singleLine="true"
                     android:text="@string/lbl_proximo"
                     android:textAllCaps="false"
-                    style="@style/btnSolidRounded" tools:text="@string/lbl_proximo"/>
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck,VisualLintBounds"
+                    tools:text="@string/lbl_proximo" />
             </LinearLayout>
         </LinearLayout>
     </FrameLayout>

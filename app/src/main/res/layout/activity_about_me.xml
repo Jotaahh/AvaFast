@@ -22,28 +22,38 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/img_arrowright"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
-            <TextView android:ellipsize="end"
+
+            <TextView
                 android:id="@+id/txtSobremim"
+                style="@style/txtPoppinsmedium18"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_42pxv"
-                android:layout_marginEnd="@dimen/_170pxh"
                 android:layout_marginStart="@dimen/_100pxh"
                 android:layout_marginTop="@dimen/_45pxv"
-                android:layout_weight="0.82" android:layout_width="0dp"
-                android:letterSpacing="0.03" android:singleLine="true"
+                android:layout_marginEnd="@dimen/_170pxh"
+                android:layout_marginBottom="@dimen/_42pxv"
+                android:layout_weight="0.82"
+                android:ellipsize="end"
+                android:letterSpacing="0.03"
+                android:singleLine="true"
                 android:text="@{aboutMeVM.aboutMeModel.txtSobremim}"
-                style="@style/txtPoppinsmedium18" tools:text="@string/lbl_sobre_mim"/>
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/lbl_sobre_mim" />
         </LinearLayout>
-        <TextView android:ellipsize="end"
+
+        <TextView
             android:id="@+id/txtDetalhesPessoa"
-            android:layout_gravity="start"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_16pxh"
-            android:layout_marginStart="@dimen/_16pxh"
+            style="@style/txtPoppinssemibold18"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:ellipsize="end"
             android:singleLine="true"
             android:text="@{aboutMeVM.aboutMeModel.txtDetalhesPessoa}"
-            style="@style/txtPoppinssemibold18" tools:text="@string/msg_detalhes_pessoa"/>
+            tools:ignore="TextSizeCheck"
+            tools:text="@string/msg_detalhes_pessoa" />
         <LinearLayout android:gravity="start"
             android:id="@+id/linearRowvector"
             android:layout_height="wrap_content"
@@ -61,17 +71,23 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/img_vector_white_a700"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700"/>
-            <TextView android:ellipsize="end"
+
+            <TextView
                 android:id="@+id/txtNeymarDaSilva"
+                style="@style/txtPoppinsmedium15_1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_16pxv"
-                android:layout_marginEnd="@dimen/_132pxh"
                 android:layout_marginStart="@dimen/_21pxh"
                 android:layout_marginTop="@dimen/_20pxv"
-                android:layout_weight="0.89" android:layout_width="0dp"
-                android:letterSpacing="0.02" android:singleLine="true"
+                android:layout_marginEnd="@dimen/_132pxh"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_weight="0.89"
+                android:ellipsize="end"
+                android:letterSpacing="0.02"
+                android:singleLine="true"
                 android:text="@{aboutMeVM.aboutMeModel.txtNeymarDaSilva}"
-                style="@style/txtPoppinsmedium15_1" tools:text="@string/msg_neymar_da_silva"/>
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/msg_neymar_da_silva" />
         </LinearLayout>
         <LinearLayout android:gravity="start"
             android:id="@+id/linearRowvectorOne"
@@ -90,16 +106,23 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/img_vector_white_a700_17x23"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700_17x23"/>
-            <TextView android:ellipsize="end" android:id="@+id/txtEmail"
+
+            <TextView
+                android:id="@+id/txtEmail"
+                style="@style/txtPoppinsmedium15_1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_16pxv"
-                android:layout_marginEnd="@dimen/_87pxh"
                 android:layout_marginStart="@dimen/_21pxh"
                 android:layout_marginTop="@dimen/_20pxv"
-                android:layout_weight="0.91" android:layout_width="0dp"
-                android:letterSpacing="0.02" android:singleLine="true"
+                android:layout_marginEnd="@dimen/_87pxh"
+                android:layout_marginBottom="@dimen/_16pxv"
+                android:layout_weight="0.91"
+                android:ellipsize="end"
+                android:letterSpacing="0.02"
+                android:singleLine="true"
                 android:text="@{aboutMeVM.aboutMeModel.txtEmail}"
-                style="@style/txtPoppinsmedium15_1" tools:text="@string/msg_neymar_jogador"/>
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/msg_neymar_jogador" />
         </LinearLayout>
         <LinearLayout android:gravity="start"
             android:id="@+id/linearRowvectorTwo"
@@ -118,49 +141,63 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/img_vector"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
-            <TextView android:ellipsize="end"
+
+            <TextView
                 android:id="@+id/txtLanguage"
+                style="@style/txtPoppinsmedium15_1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_18pxv"
-                android:layout_marginEnd="@dimen/_181pxh"
                 android:layout_marginStart="@dimen/_21pxh"
                 android:layout_marginTop="@dimen/_18pxv"
-                android:layout_weight="0.86" android:layout_width="0dp"
-                android:letterSpacing="0.02" android:singleLine="true"
+                android:layout_marginEnd="@dimen/_181pxh"
+                android:layout_marginBottom="@dimen/_18pxv"
+                android:layout_weight="0.86"
+                android:ellipsize="end"
+                android:letterSpacing="0.02"
+                android:singleLine="true"
                 android:text="@{aboutMeVM.aboutMeModel.txtLanguage}"
-                style="@style/txtPoppinsmedium15_1" tools:text="@string/msg_1_202_555_0"/>
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/msg_1_202_555_0" />
         </LinearLayout>
-        <TextView android:ellipsize="end"
+
+        <TextView
             android:id="@+id/txtTrocaraSenha"
-            android:layout_gravity="start"
+            style="@style/txtPoppinssemibold18_1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_gravity="start"
             android:layout_marginStart="@dimen/_16pxh"
             android:layout_marginTop="@dimen/_33pxv"
-            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:ellipsize="end"
             android:singleLine="true"
             android:text="@{aboutMeVM.aboutMeModel.txtTrocaraSenha}"
-            style="@style/txtPoppinssemibold18_1" tools:text="@string/lbl_trocar_a_senha"/>
+            tools:ignore="TextSizeCheck"
+            tools:text="@string/lbl_trocar_a_senha" />
+
         <EditText
-            android:background="@drawable/rectangle_bg_gray_900_radius_5"
-            android:drawablePadding="@dimen/_27pxh"
-            android:drawableStart="@drawable/img_group_5"
-            android:ellipsize="end"
-            android:hint="@string/lbl_senha_atual"
-            android:id="@+id/etGroupNine" android:inputType="text"
+            android:id="@+id/etGroupNine"
+            style="@style/etSolidRounded"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_15pxh"
             android:layout_marginStart="@dimen/_15pxh"
             android:layout_marginTop="@dimen/_16pxv"
-            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:background="@drawable/rectangle_bg_gray_900_radius_5"
+            android:drawableStart="@drawable/img_group_5"
+            android:drawablePadding="@dimen/_27pxh"
+            android:ellipsize="end"
+            android:hint="@string/lbl_senha_atual"
+            android:inputType="text"
             android:letterSpacing="0.02"
-            android:paddingBottom="@dimen/_17pxv"
-            android:paddingEnd="@dimen/_30pxh"
             android:paddingStart="@dimen/_17pxh"
-            android:paddingTop="@dimen/_19pxv" android:singleLine="true"
+            android:paddingTop="@dimen/_19pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_17pxv"
+            android:singleLine="true"
             android:text="@={aboutMeVM.aboutMeModel.etGroupNineValue}"
             android:textColorHint="@color/white_A700"
-            style="@style/etSolidRounded" tools:ignore="Autofill"/>
+            tools:ignore="Autofill,TextSizeCheck,VisualLintTextFieldSize" />
         <ImageView android:id="@+id/imageGroupEight"
             android:layout_gravity="center_horizontal"
             android:layout_height="@dimen/_60pxh"
@@ -170,26 +207,30 @@
             android:layout_width="@dimen/_380pxh"
             android:scaleType="fitXY" android:src="@drawable/img_group8"
             tools:ignore="ContentDescription" tools:src="@drawable/img_group8"/>
+
         <EditText
-            android:background="@drawable/rectangle_bg_gray_900_radius_5"
-            android:drawablePadding="@dimen/_27pxh"
-            android:drawableStart="@drawable/img_group_5"
-            android:ellipsize="end"
-            android:hint="@string/lbl_confirmar_senha"
-            android:id="@+id/etGroupTen" android:inputType="text"
+            android:id="@+id/etGroupTen"
+            style="@style/etSolidRounded"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_15pxh"
             android:layout_marginStart="@dimen/_15pxh"
             android:layout_marginTop="@dimen/_5pxv"
-            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:background="@drawable/rectangle_bg_gray_900_radius_5"
+            android:drawableStart="@drawable/img_group_5"
+            android:drawablePadding="@dimen/_27pxh"
+            android:ellipsize="end"
+            android:hint="@string/lbl_confirmar_senha"
+            android:inputType="text"
             android:letterSpacing="0.02"
-            android:paddingBottom="@dimen/_18pxv"
-            android:paddingEnd="@dimen/_30pxh"
             android:paddingStart="@dimen/_17pxh"
-            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:paddingTop="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_18pxv"
+            android:singleLine="true"
             android:text="@={aboutMeVM.aboutMeModel.etGroupTenValue}"
             android:textColorHint="@color/white_A700"
-            style="@style/etSolidRounded" tools:ignore="Autofill"/>
+            tools:ignore="Autofill,TextSizeCheck,VisualLintTextFieldSize" />
         <androidx.appcompat.widget.AppCompatButton
             android:ellipsize="end" android:gravity="center"
             android:id="@+id/btnProximo"
@@ -204,6 +245,7 @@
             android:paddingStart="@dimen/_30pxh"
             android:paddingTop="@dimen/_18pxv" android:singleLine="true"
             android:text="@string/lbl_proximo"
-            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_proximo"/>
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_proximo"
+            tools:ignore="VisualLintButtonSize,VisualLintBounds" />
     </LinearLayout>
 </layout>

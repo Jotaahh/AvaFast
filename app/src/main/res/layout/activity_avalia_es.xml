@@ -30,29 +30,36 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/img_arrowright"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
-                <TextView android:ellipsize="end"
+
+                <TextView
                     android:id="@+id/txtRestaurantes"
+                    style="@style/txtPoppinsmedium18"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_78pxh"
                     android:layout_weight="0.89"
-                    android:layout_width="0dp"
+                    android:ellipsize="end"
                     android:letterSpacing="0.03"
                     android:singleLine="true"
                     android:text="@{avaliaEsVM.avaliaEsModel.txtRestaurantes}"
-                    style="@style/txtPoppinsmedium18" tools:text="@string/msg_minhas_avalia"/>
+                    tools:ignore="TextSizeCheck"
+                    tools:text="@string/msg_minhas_avalia" />
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
+
         <androidx.recyclerview.widget.RecyclerView
-            android:gravity="center_horizontal"
             android:id="@+id/recyclerAvaliaes"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_426pxv"
-            android:layout_marginEnd="@dimen/_17pxh"
+            itemSpace="@{@dimen/_13pxh}"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
             android:layout_marginStart="@dimen/_17pxh"
             android:layout_marginTop="@dimen/_26pxv"
-            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginBottom="@dimen/_426pxv"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            itemSpace="@{@dimen/_13pxh}" tools:itemCount="3" tools:listitem="@layout/row_avalia_es"/>
+            tools:itemCount="3"
+            tools:listitem="@layout/row_avalia_es" />
     </LinearLayout>
 </layout>

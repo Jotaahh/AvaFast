@@ -18,24 +18,33 @@
             android:letterSpacing="0.04" android:singleLine="true"
             android:text="@{aprendaVM.aprendaModel.txtAvaFast}"
             style="@style/txtPoppinsbold30" tools:text="@string/lbl_avafast"/>
-        <TextView android:ellipsize="end"
-            android:gravity="center_horizontal"
+
+        <TextView
             android:id="@+id/txtAprendaamexer"
+            style="@style/txtPoppinsmedium15_1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_17pxh"
             android:layout_marginStart="@dimen/_17pxh"
             android:layout_marginTop="@dimen/_66pxv"
-            android:layout_width="match_parent"
-            android:letterSpacing="0.02" android:singleLine="true"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.02"
+            android:singleLine="true"
             android:text="@{aprendaVM.aprendaModel.txtAprendaamexer}"
-            style="@style/txtPoppinsmedium15_1" tools:text="@string/msg_aprenda_a_mexer"/>
-        <ImageView android:gravity="start"
+            tools:ignore="TextSizeCheck"
+            tools:text="@string/msg_aprenda_a_mexer" />
+
+        <ImageView
             android:id="@+id/imageRestOne"
+            imageRes="@{@drawable/img_rest1}"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/_412pxv"
             android:layout_marginTop="@dimen/_40pxv"
-            android:layout_width="match_parent"
-            android:scaleType="fitXY" imageRes="@{@drawable/img_rest1}"
-            tools:ignore="ContentDescription" tools:src="@drawable/img_rest1"/>
+            android:gravity="start"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription,ImageContrastCheck"
+            tools:src="@drawable/img_rest1" />
         <ImageView android:id="@+id/imagePointers"
             android:layout_gravity="center_horizontal"
             android:layout_height="@dimen/_8pxh"
@@ -46,20 +55,27 @@
             android:scaleType="fitXY"
             android:src="@drawable/img_pointers"
             tools:ignore="ContentDescription" tools:src="@drawable/img_pointers"/>
+
         <androidx.appcompat.widget.AppCompatButton
-            android:ellipsize="end" android:gravity="center"
             android:id="@+id/btnProximo"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_20pxv"
-            android:layout_marginEnd="@dimen/_17pxh"
+            style="@style/btnSolidRounded"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
             android:layout_marginStart="@dimen/_17pxh"
             android:layout_marginTop="@dimen/_56pxv"
-            android:layout_width="match_parent"
-            android:paddingBottom="@dimen/_18pxv"
-            android:paddingEnd="@dimen/_30pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:minHeight="48dp"
             android:paddingStart="@dimen/_30pxh"
-            android:paddingTop="@dimen/_18pxv" android:singleLine="true"
+            android:paddingTop="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_18pxv"
+            android:singleLine="true"
             android:text="@string/lbl_proximo"
-            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_proximo"/>
+            android:textAllCaps="false"
+            tools:ignore="TextSizeCheck,VisualLintButtonSize,VisualLintBounds,TouchTargetSizeCheck"
+            tools:text="@string/lbl_proximo" />
     </LinearLayout>
 </layout>

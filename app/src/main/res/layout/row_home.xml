@@ -26,18 +26,22 @@
                         android:background="@drawable/rectangle_bg_white_a700_radius_43_5"
                         android:id="@+id/viewEllipseSixteenOne"
                         android:layout_gravity="start"
-                        android:layout_height="@dimen/_84pxh" android:layout_width="@dimen/_87pxh"/>
-                    <ImageView android:id="@+id/imageNaulogo"
+                        android:layout_height="@dimen/_84pxh" android:layout_width="@dimen/_87pxh"
+                        tools:ignore="VisualLintBounds" />
+
+                    <ImageView
+                        android:id="@+id/imageNaulogo"
+                        imageRes="@{@drawable/img_naulogo}"
+                        android:layout_width="54dp"
+                        android:layout_height="55dp"
                         android:layout_gravity="center"
-                        android:layout_height="@dimen/_65pxh"
-                        android:layout_marginBottom="@dimen/_9pxv"
-                        android:layout_marginEnd="@dimen/_17pxh"
                         android:layout_marginStart="@dimen/_16pxh"
                         android:layout_marginTop="@dimen/_10pxv"
-                        android:layout_width="@dimen/_54pxh"
+                        android:layout_marginEnd="@dimen/_17pxh"
+                        android:layout_marginBottom="@dimen/_9pxv"
                         android:scaleType="fitXY"
-                        imageRes="@{@drawable/img_naulogo}"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_naulogo"/>
+                        tools:ignore="ContentDescription,VisualLintBounds"
+                        tools:src="@drawable/img_naulogo" />
                 </FrameLayout>
                 <FrameLayout android:id="@+id/frameStackvector"
                     android:layout_height="@dimen/_16pxv"
@@ -51,14 +55,14 @@
                         android:layout_width="@dimen/_16pxh"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_vector_bluegray_400"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_bluegray_400"/>
+                        tools:ignore="ContentDescription,VisualLintBounds" tools:src="@drawable/img_vector_bluegray_400"/>
                     <ImageView android:id="@+id/imageVectorOne"
                         android:layout_gravity="start"
                         android:layout_height="@dimen/_16pxh"
                         android:layout_width="@dimen/_18pxh"
                         android:scaleType="fitXY"
                         android:src="@drawable/img_vector_red_a200"
-                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_red_a200"/>
+                        tools:ignore="ContentDescription,VisualLintBounds" tools:src="@drawable/img_vector_red_a200"/>
                 </FrameLayout>
             </LinearLayout>
             <ImageView android:id="@+id/imageStarReviewTwo"
@@ -69,26 +73,34 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/img_starreview"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_starreview"/>
-            <TextView android:ellipsize="end"
+
+            <TextView
                 android:id="@+id/txtCocoBambuOne"
+                style="@style/txtPoppinssemibold15_1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_38pxh"
                 android:layout_marginStart="@dimen/_38pxh"
                 android:layout_marginTop="@dimen/_1pxv"
-                android:layout_width="wrap_content"
+                android:layout_marginEnd="@dimen/_38pxh"
+                android:ellipsize="end"
                 android:singleLine="true"
                 android:text="@{homeRowModel.txtCocoBambuOne}"
-                style="@style/txtPoppinssemibold15_1" tools:text="@string/lbl_nau"/>
-            <TextView android:ellipsize="end"
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/lbl_nau" />
+
+            <TextView
                 android:id="@+id/txtFrutosdoMarOne"
+                style="@style/txtPoppinsmedium12"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_11pxh"
                 android:layout_marginStart="@dimen/_11pxh"
                 android:layout_marginTop="@dimen/_1pxv"
-                android:layout_width="match_parent"
+                android:layout_marginEnd="@dimen/_11pxh"
+                android:ellipsize="end"
                 android:singleLine="true"
                 android:text="@{homeRowModel.txtFrutosdoMarOne}"
-                style="@style/txtPoppinsmedium12" tools:text="@string/lbl_frutos_do_mar"/>
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/lbl_frutos_do_mar" />
         </LinearLayout>
         <View android:background="@color/gray_200"
             android:id="@+id/lineLineTwoOne"
@@ -109,16 +121,21 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/img_image11"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_image11"/>
-            <TextView android:ellipsize="end"
+
+            <TextView
                 android:id="@+id/txt87avaliaesOne"
+                style="@style/txtPoppinsmedium12"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_6pxv"
                 android:layout_marginStart="@dimen/_3pxh"
                 android:layout_marginTop="@dimen/_4pxv"
-                android:layout_weight="0.76" android:layout_width="0dp"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_weight="0.76"
+                android:ellipsize="end"
                 android:singleLine="true"
                 android:text="@{homeRowModel.txt87avaliaesOne}"
-                style="@style/txtPoppinsmedium12" tools:text="@string/lbl_62_avalia_es"/>
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/lbl_62_avalia_es" />
         </LinearLayout>
     </LinearLayout>
 </layout>

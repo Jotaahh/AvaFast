@@ -28,23 +28,31 @@
                 android:layout_marginStart="@dimen/_12pxh"
                 android:layout_marginTop="@dimen/_2pxv"
                 android:layout_weight="0.66" android:layout_width="0dp" android:orientation="vertical">
-                <TextView android:ellipsize="end"
+
+                <TextView
                     android:id="@+id/txtLanguage"
+                    style="@style/txtPoppinssemibold15"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/_10pxh"
-                    android:layout_width="match_parent"
+                    android:ellipsize="end"
                     android:letterSpacing="0.02"
                     android:singleLine="true"
                     android:text="@{comentariosRowModel.txtLanguage}"
-                    style="@style/txtPoppinssemibold15" tools:text="@string/lbl_sabrina"/>
-                <TextView android:ellipsize="end"
+                    tools:ignore="TextSizeCheck"
+                    tools:text="@string/lbl_sabrina" />
+
+                <TextView
                     android:id="@+id/txtDuration"
-                    android:layout_height="wrap_content"
+                    style="@style/txtPoppinsmedium10"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
                     android:letterSpacing="0.01"
                     android:singleLine="true"
                     android:text="@{comentariosRowModel.txtDuration}"
-                    style="@style/txtPoppinsmedium10" tools:text="@string/lbl_32_minutes_ago"/>
+                    tools:ignore="TextSizeCheck"
+                    tools:text="@string/lbl_32_minutes_ago" />
             </LinearLayout>
         </LinearLayout>
         <View android:background="@color/yellow_800"
@@ -61,13 +69,18 @@
             android:layout_marginStart="@dimen/_17pxh"
             android:layout_marginTop="@dimen/_14pxv"
             android:layout_width="wrap_content" android:orientation="horizontal">
-            <TextView android:ellipsize="end"
+
+            <TextView
                 android:id="@+id/txtFortyFive"
+                style="@style/txtPoppinsmedium12"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18" android:layout_width="0dp"
+                android:layout_weight="0.18"
+                android:ellipsize="end"
                 android:singleLine="true"
                 android:text="@{comentariosRowModel.txtFortyFive}"
-                style="@style/txtPoppinsmedium12" tools:text="@string/lbl_4_5"/>
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/lbl_4_5" />
             <ImageView android:id="@+id/imageGroup101"
                 android:layout_height="@dimen/_14pxh"
                 android:layout_marginBottom="@dimen/_3pxv"
@@ -78,15 +91,19 @@
                 android:src="@drawable/img_group101"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_group101"/>
         </LinearLayout>
-        <TextView android:gravity="center_horizontal"
+
+        <TextView
             android:id="@+id/txtServioimpecv"
+            style="@style/txtPoppinsregular12"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_16pxv"
-            android:layout_marginEnd="@dimen/_17pxh"
             android:layout_marginStart="@dimen/_17pxh"
             android:layout_marginTop="@dimen/_3pxv"
-            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:gravity="center_horizontal"
             android:text="@{comentariosRowModel.txtServioimpecv}"
-            style="@style/txtPoppinsregular12" tools:text="@string/msg_servi_o_impec_v"/>
+            tools:ignore="TextSizeCheck"
+            tools:text="@string/msg_servi_o_impec_v" />
     </LinearLayout>
 </layout>

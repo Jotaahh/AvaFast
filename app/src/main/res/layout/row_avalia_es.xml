@@ -6,7 +6,8 @@
     <LinearLayout android:id="@+id/linearRowellipsesixteen"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:orientation="horizontal" style="@style/groupStylegray_900">
+        android:orientation="horizontal" style="@style/groupStylegray_900"
+        android:baselineAligned="false">
         <FrameLayout android:id="@+id/frameStackellipsesixteen"
             android:layout_height="@dimen/_71pxv"
             android:layout_marginBottom="@dimen/_14pxv"
@@ -17,7 +18,8 @@
                 android:id="@+id/viewEllipseSixteen"
                 android:layout_gravity="top|start"
                 android:layout_height="@dimen/_64pxh"
-                android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_64pxh"/>
+                android:layout_marginBottom="@dimen/_10pxv" android:layout_width="@dimen/_64pxh"
+                tools:ignore="VisualLintBounds" />
             <ImageView android:id="@+id/imageLogococobambu"
                 android:layout_gravity="bottom|center"
                 android:layout_height="@dimen/_56pxh"
@@ -27,7 +29,7 @@
                 android:layout_width="@dimen/_55pxh"
                 android:scaleType="fitXY"
                 imageRes="@{@drawable/img_logococobambu}"
-                tools:ignore="ContentDescription" tools:src="@drawable/img_logococobambu"/>
+                tools:ignore="ContentDescription,VisualLintBounds" tools:src="@drawable/img_logococobambu"/>
         </FrameLayout>
         <LinearLayout android:gravity="start"
             android:id="@+id/linearColumngroup101"
@@ -44,22 +46,30 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/img_group101"
                 tools:ignore="ContentDescription" tools:src="@drawable/img_group101"/>
-            <TextView android:ellipsize="end"
+
+            <TextView
                 android:id="@+id/txtNomeRestaurant"
+                style="@style/txtPoppinssemibold15_1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_2pxv"
-                android:layout_width="match_parent"
+                android:ellipsize="end"
                 android:singleLine="true"
                 android:text="@{avaliaEsRowModel.txtNomeRestaurant}"
-                style="@style/txtPoppinssemibold15_1" tools:text="@string/lbl_coco_bambu"/>
-            <TextView android:ellipsize="end"
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/lbl_coco_bambu" />
+
+            <TextView
                 android:id="@+id/txtFocodorest"
+                style="@style/txtPoppinsregular12"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_10pxh"
-                android:layout_width="match_parent"
+                android:ellipsize="end"
                 android:singleLine="true"
                 android:text="@{avaliaEsRowModel.txtFocodorest}"
-                style="@style/txtPoppinsregular12" tools:text="@string/lbl_frutos_do_mar"/>
+                tools:ignore="TextSizeCheck"
+                tools:text="@string/lbl_frutos_do_mar" />
         </LinearLayout>
     </LinearLayout>
 </layout>

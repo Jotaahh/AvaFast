@@ -11,9 +11,10 @@
             android:fillViewport="true"
             android:id="@+id/scrollViewScrollview"
             android:layout_gravity="start" android:layout_height="0dp"
-            android:layout_weight="1" android:layout_width="match_parent">
+            android:layout_weight="1" android:layout_width="match_parent"
+            tools:ignore="ObsoleteLayoutParam">
             <FrameLayout android:id="@+id/frameCadastrar"
-                android:layout_height="match_parent" android:layout_width="match_parent">
+                android:layout_height="wrap_content" android:layout_width="match_parent">
                 <FrameLayout android:id="@+id/frameStackportraitfemale"
                     android:layout_gravity="start"
                     android:layout_height="@dimen/_896pxv"
@@ -68,7 +69,7 @@
                                     android:layout_width="@dimen/_23pxh"
                                     android:scaleType="fitXY"
                                     android:src="@drawable/img_arrowright"
-                                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright"/>
+                                    tools:ignore="ContentDescription,TooDeepLayout" tools:src="@drawable/img_arrowright"/>
                                     <TextView android:ellipsize="end"
                                     android:id="@+id/txtBemVindo"
                                     android:layout_height="wrap_content"
@@ -203,7 +204,8 @@
                             android:singleLine="true"
                             android:text="@string/lbl_j_tem_login"
                             android:textAllCaps="false"
-                            style="@style/btnSolidRounded" tools:text="@string/lbl_j_tem_login"/>
+                            style="@style/btnSolidRounded" tools:text="@string/lbl_j_tem_login"
+                            tools:ignore="VisualLintButtonSize" />
                         <androidx.appcompat.widget.AppCompatButton
                             android:ellipsize="end"
                             android:gravity="center"
@@ -222,7 +224,8 @@
                             android:singleLine="true"
                             android:text="@string/lbl_criar_conta"
                             android:textAllCaps="false"
-                            style="@style/btnSolidRounded" tools:text="@string/lbl_criar_conta"/>
+                            style="@style/btnSolidRounded" tools:text="@string/lbl_criar_conta"
+                            tools:ignore="VisualLintButtonSize" />
                     </LinearLayout>
                     <LinearLayout android:id="@+id/linearBody1"
                         android:layout_gravity="bottom|center"

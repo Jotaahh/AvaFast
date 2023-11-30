@@ -29,16 +29,20 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/img_arrowright_black_900"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright_black_900"/>
-                <TextView android:ellipsize="end"
+
+                <TextView
                     android:id="@+id/txtAvaliaesdos"
+                    style="@style/txtPoppinsmedium18"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_29pxh"
                     android:layout_weight="0.87"
-                    android:layout_width="0dp"
+                    android:ellipsize="end"
                     android:letterSpacing="0.03"
                     android:singleLine="true"
                     android:text="@{comentariosssVM.comentariosssModel.txtAvaliaesdos}"
-                    style="@style/txtPoppinsmedium18" tools:text="@string/msg_avalia_es_dos"/>
+                    tools:ignore="TextSizeCheck"
+                    tools:text="@string/msg_avalia_es_dos" />
                 <ImageView android:id="@+id/imageAddOne"
                     android:layout_height="@dimen/_20pxh"
                     android:layout_marginBottom="@dimen/_6pxv"

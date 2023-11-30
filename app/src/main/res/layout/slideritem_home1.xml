@@ -13,16 +13,20 @@
             imageUrl="@{imageSliderSliderellaolssonrdthreeModel.imageEllaolssonrDThree}"
             placeHolder="@{@drawable/image_not_found}"
             tools:ignore="ContentDescription" tools:src="@drawable/img_ellaolssonrd3"/>
-        <TextView android:gravity="top|start"
+
+        <TextView
             android:id="@+id/txtGarantacupons"
-            android:layout_gravity="bottom|start"
+            style="@style/txtPoppinssemibold18_2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_59pxv"
-            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_gravity="bottom|start"
             android:layout_marginStart="@dimen/_31pxh"
             android:layout_marginTop="@dimen/_59pxv"
-            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginBottom="@dimen/_59pxv"
+            android:gravity="top|start"
             android:text="@{imageSliderSliderellaolssonrdthreeModel.txtGarantacupons}"
-            style="@style/txtPoppinssemibold18_2" tools:text="@string/msg_garanta_cupons"/>
+            tools:ignore="TextSizeCheck"
+            tools:text="@string/msg_garanta_cupons" />
     </FrameLayout>
 </layout>

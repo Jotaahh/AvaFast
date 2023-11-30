@@ -20,26 +20,31 @@
                     android:layout_width="match_parent"
                     android:scaleType="fitXY"
                     imageRes="@{@drawable/img_womanwithshop}"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_womanwithshop"/>
+                    tools:ignore="ContentDescription,VisualLintBounds" tools:src="@drawable/img_womanwithshop"/>
                 <LinearLayout android:id="@+id/linearColumnbemvindo"
                     android:layout_gravity="top|start"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_10pxv"
                     android:layout_width="match_parent"
                     android:orientation="vertical" style="@style/groupStyle">
-                    <TextView android:ellipsize="end"
-                        android:gravity="center_horizontal"
+
+                    <TextView
                         android:id="@+id/txtBemVindo"
+                        style="@style/txtPoppinsmedium18"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="@dimen/_41pxv"
-                        android:layout_marginEnd="@dimen/_151pxh"
                         android:layout_marginStart="@dimen/_153pxh"
                         android:layout_marginTop="@dimen/_25pxv"
-                        android:layout_width="match_parent"
+                        android:layout_marginEnd="@dimen/_151pxh"
+                        android:layout_marginBottom="@dimen/_41pxv"
+                        android:ellipsize="end"
+                        android:gravity="center_horizontal"
                         android:letterSpacing="0.03"
                         android:singleLine="true"
                         android:text="@{loginVM.loginModel.txtBemVindo}"
-                        style="@style/txtPoppinsmedium18" tools:text="@string/lbl_bem_vindo"/>
+                        android:textColor="#757575"
+                        tools:ignore="TextSizeCheck,TextContrastCheck"
+                        tools:text="@string/lbl_bem_vindo" />
                 </LinearLayout>
             </FrameLayout>
             <LinearLayout android:id="@+id/linearBody"
@@ -48,28 +53,36 @@
                 android:layout_marginTop="@dimen/_10pxv"
                 android:layout_width="match_parent"
                 android:orientation="vertical" style="@style/groupStyleblack_900cornerRadius">
-                <TextView android:ellipsize="end"
+
+                <TextView
                     android:id="@+id/txtWelcomeback"
+                    style="@style/txtPoppinssemibold25_1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_16pxh"
                     android:layout_marginStart="@dimen/_16pxh"
                     android:layout_marginTop="@dimen/_29pxv"
-                    android:layout_width="match_parent"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:ellipsize="end"
                     android:letterSpacing="0.04"
                     android:singleLine="true"
                     android:text="@{loginVM.loginModel.txtWelcomeback}"
-                    style="@style/txtPoppinssemibold25_1" tools:text="@string/lbl_welcome_back"/>
-                <TextView android:ellipsize="end"
+                    tools:ignore="TextSizeCheck"
+                    tools:text="@string/lbl_welcome_back" />
+
+                <TextView
                     android:id="@+id/txtEntrenasuaco"
+                    style="@style/txtPoppinsregular15"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/_16pxh"
                     android:layout_marginStart="@dimen/_16pxh"
                     android:layout_marginTop="@dimen/_2pxv"
-                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:ellipsize="end"
                     android:letterSpacing="0.02"
                     android:singleLine="true"
                     android:text="@{loginVM.loginModel.txtEntrenasuaco}"
-                    style="@style/txtPoppinsregular15" tools:text="@string/msg_entre_na_sua_co"/>
+                    tools:ignore="TextSizeCheck"
+                    tools:text="@string/msg_entre_na_sua_co" />
                 <LinearLayout android:gravity="start"
                     android:id="@+id/linearEmailField"
                     android:layout_height="wrap_content"
@@ -87,19 +100,23 @@
                         android:scaleType="fitXY"
                         android:src="@drawable/img_vector_white_a700_17x23"
                         tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700_17x23"/>
-                    <TextView android:ellipsize="end"
+
+                    <TextView
                         android:id="@+id/txtEndereodeema"
+                        style="@style/txtPoppinsmedium15_1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_16pxv"
-                        android:layout_marginEnd="@dimen/_160pxh"
                         android:layout_marginStart="@dimen/_21pxh"
                         android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_marginEnd="@dimen/_160pxh"
+                        android:layout_marginBottom="@dimen/_16pxv"
                         android:layout_weight="0.87"
-                        android:layout_width="0dp"
+                        android:ellipsize="end"
                         android:letterSpacing="0.02"
                         android:singleLine="true"
                         android:text="@{loginVM.loginModel.txtEndereodeema}"
-                        style="@style/txtPoppinsmedium15_1" tools:text="@string/msg_endere_o_de_ema"/>
+                        tools:ignore="TextSizeCheck"
+                        tools:text="@string/msg_endere_o_de_ema" />
                 </LinearLayout>
                 <ImageView android:gravity="center_horizontal"
                     android:id="@+id/imagePasswordField"
@@ -121,20 +138,26 @@
 
                     <com.google.android.material.switchmaterial.SwitchMaterial
                         android:id="@+id/switchMaterialGroupSix"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_4pxv"
                         android:layout_marginTop="@dimen/_2pxv"
-                        android:layout_weight="0.18" android:layout_width="0dp"/>
-                    <TextView android:ellipsize="end"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_weight="0.18"
+                        tools:ignore="TouchTargetSizeCheck,VisualLintBounds" />
+
+                    <TextView
                         android:id="@+id/txtLembrarSempre"
+                        style="@style/txtPoppinsmedium15_1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_9pxh"
                         android:layout_weight="0.82"
-                        android:layout_width="0dp"
+                        android:ellipsize="end"
                         android:letterSpacing="0.02"
                         android:singleLine="true"
                         android:text="@{loginVM.loginModel.txtLembrarSempre}"
-                        style="@style/txtPoppinsmedium15_1" tools:text="@string/lbl_lembrar_sempre"/>
+                        tools:ignore="TextSizeCheck"
+                        tools:text="@string/lbl_lembrar_sempre" />
                 </LinearLayout>
                 <LinearLayout android:gravity="start"
                     android:id="@+id/linearRowvoltar"
@@ -144,35 +167,43 @@
                     android:layout_marginStart="@dimen/_16pxh"
                     android:layout_marginTop="@dimen/_55pxv"
                     android:layout_width="match_parent" android:orientation="horizontal">
+
                     <androidx.appcompat.widget.AppCompatButton
-                        android:ellipsize="end" android:gravity="center"
                         android:id="@+id/btnVoltar"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.5"
-                        android:layout_width="0dp"
-                        android:paddingBottom="@dimen/_18pxv"
-                        android:paddingEnd="@dimen/_30pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
                         android:paddingStart="@dimen/_30pxh"
                         android:paddingTop="@dimen/_18pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_18pxv"
                         android:singleLine="true"
                         android:text="@string/lbl_voltar"
                         android:textAllCaps="false"
-                        style="@style/btnSolidRounded" tools:text="@string/lbl_voltar"/>
+                        tools:ignore="TextSizeCheck,VisualLintButtonSize"
+                        tools:text="@string/lbl_voltar" />
+
                     <androidx.appcompat.widget.AppCompatButton
-                        android:ellipsize="end" android:gravity="center"
                         android:id="@+id/btnLogin"
+                        style="@style/btnSolidRounded"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_12pxh"
                         android:layout_weight="0.5"
-                        android:layout_width="0dp"
-                        android:paddingBottom="@dimen/_18pxv"
-                        android:paddingEnd="@dimen/_30pxh"
+                        android:ellipsize="end"
+                        android:gravity="center"
                         android:paddingStart="@dimen/_30pxh"
                         android:paddingTop="@dimen/_18pxv"
+                        android:paddingEnd="@dimen/_30pxh"
+                        android:paddingBottom="@dimen/_18pxv"
                         android:singleLine="true"
                         android:text="@string/lbl_login"
                         android:textAllCaps="false"
-                        style="@style/btnSolidRounded" tools:text="@string/lbl_login"/>
+                        tools:ignore="TextSizeCheck,VisualLintButtonSize"
+                        tools:text="@string/lbl_login" />
                 </LinearLayout>
             </LinearLayout>
         </FrameLayout>

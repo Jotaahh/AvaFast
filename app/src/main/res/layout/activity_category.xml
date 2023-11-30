@@ -29,16 +29,20 @@
                     android:scaleType="fitXY"
                     android:src="@drawable/img_arrowright_black_900"
                     tools:ignore="ContentDescription" tools:src="@drawable/img_arrowright_black_900"/>
-                <TextView android:ellipsize="end"
+
+                <TextView
                     android:id="@+id/txtCategorias"
+                    style="@style/txtPoppinsmedium18"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_114pxh"
                     android:layout_weight="0.7"
-                    android:layout_width="0dp"
+                    android:ellipsize="end"
                     android:letterSpacing="0.03"
                     android:singleLine="true"
                     android:text="@{categoryVM.categoryModel.txtCategorias}"
-                    style="@style/txtPoppinsmedium18" tools:text="@string/lbl_categorias"/>
+                    tools:ignore="TextSizeCheck"
+                    tools:text="@string/lbl_categorias" />
                 <ImageView android:id="@+id/imageGroup"
                     android:layout_height="@dimen/_21pxh"
                     android:layout_marginBottom="@dimen/_5pxv"
@@ -64,38 +68,46 @@
                     android:layout_marginEnd="@dimen/_17pxh"
                     android:layout_marginStart="@dimen/_17pxh"
                     android:layout_marginTop="@dimen/_102pxv"
-                    android:layout_width="match_parent" android:orientation="horizontal">
+                    android:layout_width="match_parent" android:orientation="horizontal"
+                    android:baselineAligned="false">
                     <LinearLayout android:gravity="center_horizontal"
                         android:id="@+id/linearCat1"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.33"
                         android:layout_width="0dp"
                         android:orientation="vertical" style="@style/groupStyleblack_1">
+
                         <ImageButton
-                            android:background="@drawable/rectangle_bg_white_a700_radius_33"
                             android:id="@+id/btnGroup228"
-                            android:layout_gravity="center_horizontal"
+                            android:layout_width="@dimen/_66pxh"
                             android:layout_height="@dimen/_66pxh"
-                            android:layout_marginEnd="@dimen/_27pxh"
+                            android:layout_gravity="center_horizontal"
                             android:layout_marginStart="@dimen/_27pxh"
                             android:layout_marginTop="@dimen/_16pxv"
-                            android:layout_width="@dimen/_66pxh"
+                            android:layout_marginEnd="@dimen/_27pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_radius_33"
+                            android:contentDescription="@string/lbl_16"
                             android:paddingHorizontal="@dimen/_15pxh"
                             android:paddingVertical="@dimen/_15pxv"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/img_group12" tools:ignore="ContentDescription"/>
-                        <TextView android:ellipsize="end"
-                            android:gravity="center_horizontal"
+                            android:src="@drawable/img_group12"
+                            tools:ignore="ContentDescription,DuplicateSpeakableTextCheck" />
+
+                        <TextView
                             android:id="@+id/txtVegetariano"
+                            style="@style/txtPoppinsmedium10"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/_12pxv"
-                            android:layout_marginEnd="@dimen/_27pxh"
                             android:layout_marginStart="@dimen/_27pxh"
                             android:layout_marginTop="@dimen/_10pxv"
-                            android:layout_width="match_parent"
+                            android:layout_marginEnd="@dimen/_27pxh"
+                            android:layout_marginBottom="@dimen/_12pxv"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
                             android:singleLine="true"
                             android:text="@{categoryVM.categoryModel.txtVegetariano}"
-                            style="@style/txtPoppinsmedium10" tools:text="@string/lbl_vegetariano"/>
+                            tools:ignore="TextSizeCheck"
+                            tools:text="@string/lbl_vegetariano" />
                     </LinearLayout>
                     <LinearLayout android:gravity="center_horizontal"
                         android:id="@+id/linearCat2"
@@ -121,20 +133,24 @@
                                 android:layout_width="@dimen/_51pxh"
                                 android:scaleType="fitXY"
                                 imageRes="@{@drawable/img_image6}"
-                                tools:ignore="ContentDescription" tools:src="@drawable/img_image6"/>
+                                tools:ignore="ContentDescription,VisualLintBounds" tools:src="@drawable/img_image6"/>
                         </FrameLayout>
-                        <TextView android:ellipsize="end"
-                            android:gravity="center_horizontal"
+
+                        <TextView
                             android:id="@+id/txtFrutosdoMar"
+                            style="@style/txtPoppinsmedium10"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/_14pxv"
-                            android:layout_marginEnd="@dimen/_25pxh"
                             android:layout_marginStart="@dimen/_26pxh"
                             android:layout_marginTop="@dimen/_8pxv"
-                            android:layout_width="match_parent"
+                            android:layout_marginEnd="@dimen/_25pxh"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
                             android:singleLine="true"
                             android:text="@{categoryVM.categoryModel.txtFrutosdoMar}"
-                            style="@style/txtPoppinsmedium10" tools:text="@string/lbl_frutos_do_mar"/>
+                            tools:ignore="TextSizeCheck"
+                            tools:text="@string/lbl_frutos_do_mar" />
                     </LinearLayout>
                     <LinearLayout android:gravity="center_horizontal"
                         android:id="@+id/linearCat3"
@@ -143,31 +159,38 @@
                         android:layout_weight="0.33"
                         android:layout_width="0dp"
                         android:orientation="vertical" style="@style/groupStyleblack_1">
+
                         <ImageButton
-                            android:background="@drawable/rectangle_bg_white_a700_radius_33"
                             android:id="@+id/btnGroupTwentyThree"
-                            android:layout_gravity="center_horizontal"
+                            android:layout_width="@dimen/_66pxh"
                             android:layout_height="@dimen/_66pxh"
-                            android:layout_marginEnd="@dimen/_13pxh"
+                            android:layout_gravity="center_horizontal"
                             android:layout_marginStart="@dimen/_13pxh"
                             android:layout_marginTop="@dimen/_16pxv"
-                            android:layout_width="@dimen/_66pxh"
+                            android:layout_marginEnd="@dimen/_13pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_radius_33"
+                            android:contentDescription="@string/lbl_16"
                             android:paddingHorizontal="@dimen/_9pxh"
                             android:paddingVertical="@dimen/_9pxv"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/img_group14" tools:ignore="ContentDescription"/>
-                        <TextView android:ellipsize="end"
-                            android:gravity="center_horizontal"
+                            android:src="@drawable/img_group14"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
                             android:id="@+id/txtComidaJaponesa"
+                            style="@style/txtPoppinsmedium10"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/_13pxv"
-                            android:layout_marginEnd="@dimen/_13pxh"
                             android:layout_marginStart="@dimen/_13pxh"
                             android:layout_marginTop="@dimen/_9pxv"
-                            android:layout_width="match_parent"
+                            android:layout_marginEnd="@dimen/_13pxh"
+                            android:layout_marginBottom="@dimen/_13pxv"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal"
                             android:singleLine="true"
                             android:text="@{categoryVM.categoryModel.txtComidaJaponesa}"
-                            style="@style/txtPoppinsmedium10" tools:text="@string/lbl_comida_japonesa"/>
+                            tools:ignore="TextSizeCheck"
+                            tools:text="@string/lbl_comida_japonesa" />
                     </LinearLayout>
                 </LinearLayout>
                 <LinearLayout android:gravity="start"
@@ -177,7 +200,8 @@
                     android:layout_marginEnd="@dimen/_17pxh"
                     android:layout_marginStart="@dimen/_17pxh"
                     android:layout_marginTop="@dimen/_14pxv"
-                    android:layout_width="match_parent" android:orientation="horizontal">
+                    android:layout_width="match_parent" android:orientation="horizontal"
+                    android:baselineAligned="false">
                     <LinearLayout android:gravity="center_horizontal"
                         android:id="@+id/linearCat4"
                         android:layout_height="wrap_content"
@@ -190,7 +214,8 @@
                             android:layout_marginEnd="@dimen/_27pxh"
                             android:layout_marginStart="@dimen/_27pxh"
                             android:layout_marginTop="@dimen/_16pxv"
-                            android:layout_width="@dimen/_66pxh" style="@style/groupStylewhite_3">
+                            android:layout_width="@dimen/_66pxh" style="@style/groupStylewhite_3"
+                            tools:ignore="VisualLintBounds">
                             <ImageView android:id="@+id/imageImageNine"
                                 android:layout_gravity="center"
                                 android:layout_height="@dimen/_52pxh"
@@ -201,7 +226,7 @@
                                 android:layout_width="@dimen/_48pxh"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/img_group15"
-                                tools:ignore="ContentDescription" tools:src="@drawable/img_group15"/>
+                                tools:ignore="ContentDescription,VisualLintBounds" tools:src="@drawable/img_group15"/>
                         </FrameLayout>
                         <TextView android:ellipsize="end"
                             android:id="@+id/txtFastFood"
@@ -214,7 +239,8 @@
                             android:layout_width="wrap_content"
                             android:singleLine="true"
                             android:text="@{categoryVM.categoryModel.txtFastFood}"
-                            style="@style/txtPoppinsmedium10" tools:text="@string/lbl_fast_food"/>
+                            style="@style/txtPoppinsmedium10" tools:text="@string/lbl_fast_food"
+                            tools:ignore="VisualLintBounds" />
                     </LinearLayout>
                     <LinearLayout android:gravity="center_horizontal"
                         android:id="@+id/linearCat5"
@@ -229,7 +255,8 @@
                             android:layout_marginEnd="@dimen/_15pxh"
                             android:layout_marginStart="@dimen/_15pxh"
                             android:layout_marginTop="@dimen/_16pxv"
-                            android:layout_width="@dimen/_66pxh" style="@style/groupStylewhite_3">
+                            android:layout_width="@dimen/_66pxh" style="@style/groupStylewhite_3"
+                            tools:ignore="VisualLintBounds">
                             <ImageView android:id="@+id/imageImageEight"
                                 android:layout_gravity="center"
                                 android:layout_height="@dimen/_51pxh"
@@ -240,7 +267,7 @@
                                 android:layout_width="@dimen/_52pxh"
                                 android:scaleType="fitXY"
                                 imageRes="@{@drawable/img_image8}"
-                                tools:ignore="ContentDescription" tools:src="@drawable/img_image8"/>
+                                tools:ignore="ContentDescription,VisualLintBounds" tools:src="@drawable/img_image8"/>
                         </FrameLayout>
                         <TextView android:ellipsize="end"
                             android:gravity="center_horizontal"
@@ -253,7 +280,8 @@
                             android:layout_width="match_parent"
                             android:singleLine="true"
                             android:text="@{categoryVM.categoryModel.txtComidaBrasilei}"
-                            style="@style/txtPoppinsmedium10" tools:text="@string/msg_comida_brasilei"/>
+                            style="@style/txtPoppinsmedium10" tools:text="@string/msg_comida_brasilei"
+                            tools:ignore="VisualLintBounds" />
                     </LinearLayout>
                     <LinearLayout android:gravity="center_horizontal"
                         android:id="@+id/linearCat6"
@@ -268,7 +296,8 @@
                             android:layout_marginEnd="@dimen/_14pxh"
                             android:layout_marginStart="@dimen/_14pxh"
                             android:layout_marginTop="@dimen/_16pxv"
-                            android:layout_width="@dimen/_66pxh" style="@style/groupStylewhite_3">
+                            android:layout_width="@dimen/_66pxh" style="@style/groupStylewhite_3"
+                            tools:ignore="VisualLintBounds">
                             <ImageView android:id="@+id/imageImageTen"
                                 android:layout_gravity="center"
                                 android:layout_height="@dimen/_64pxh"
@@ -277,7 +306,7 @@
                                 android:layout_width="@dimen/_64pxh"
                                 android:scaleType="fitXY"
                                 imageRes="@{@drawable/img_image10_64x64}"
-                                tools:ignore="ContentDescription" tools:src="@drawable/img_image10_64x64"/>
+                                tools:ignore="ContentDescription,VisualLintBounds" tools:src="@drawable/img_image10_64x64"/>
                         </FrameLayout>
                         <TextView android:ellipsize="end"
                             android:gravity="center_horizontal"
@@ -290,7 +319,8 @@
                             android:layout_width="match_parent"
                             android:singleLine="true"
                             android:text="@{categoryVM.categoryModel.txtComidaMexicana}"
-                            style="@style/txtPoppinsmedium10" tools:text="@string/lbl_comida_mexicana"/>
+                            style="@style/txtPoppinsmedium10" tools:text="@string/lbl_comida_mexicana"
+                            tools:ignore="VisualLintBounds" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

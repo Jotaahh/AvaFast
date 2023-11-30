@@ -249,4 +249,9 @@
         <item name="android:textColorPrimary">@color/bluegray_400</item>
         <item name="android:textColorHint">@color/bluegray_400</item>
     </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="textAppearanceBody1">@android:style/TextAppearance.Material.Body1</item>
+    </style>
+
 </resources>
